@@ -54,3 +54,6 @@ The optimization runs in two layers:
 
 1. **Assignment (Layer 1)**, `Optimization_Model/model.py`: a Gurobi MILP that decides which nurse sees which patient each day. It minimizes mileage cost from each nurse's home plus a continuity penalty `w_c` for every extra nurse a patient sees. Each nurse-day's visits, the drive to each one, and the drive home must fit within the shift.
 2. **Sequencing (Layer 2)**, `Optimization_Model/sequencing.py`: takes those assignments and finds the visit order and timetable for every nurse-day.
+
+## Presentation 
+https://docs.google.com/presentation/d/1l2m7ZV8KepR05IqmKio-Qy1SG92R1mWDU2C3FukvK-I/edit?usp=sharing 
